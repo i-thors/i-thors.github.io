@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Shorts</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --paper: #f6f5f1;
+    --paper-raised: #ffffff;
+    --ink: #21232b;
+    --ink-soft: #4a4d59;
+    --accent: #3d5a80;
+    --accent-soft: #3d5a801a;
+    --rule: #21232b26;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1c22; --paper-raised: #232430; --ink: #eceef2;
+      --ink-soft: #b3b6c2; --accent: #8fb0d6; --accent-soft: #8fb0d626; --rule: #ffffff1f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1c22; --paper-raised: #232430; --ink: #eceef2;
+    --ink-soft: #b3b6c2; --accent: #8fb0d6; --accent-soft: #8fb0d626; --rule: #ffffff1f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px; line-height: 1.65; margin: 0;
+    padding: 6vw 1.25rem 5rem; display: flex; justify-content: center;
+  }
+  main { width: 100%; max-width: 640px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.72rem;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.9rem;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif; font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.12; letter-spacing: -0.01em;
+    margin: 0 0 1rem; text-wrap: balance;
+  }
+  .lede { font-size: 1.1rem; color: var(--ink-soft); max-width: 56ch; margin: 0 0 2.4rem; }
+  .card {
+    background: var(--paper-raised); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 1.2rem 1.4rem; margin: 0 0 0.9rem;
+  }
+  .card h2 { font-size: 1rem; margin: 0 0 0.4rem; font-family: "Source Serif 4", Georgia, serif; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+  a { color: var(--accent); text-decoration-color: var(--rule); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer {
+    margin-top: 2.4rem; padding-top: 1.4rem; border-top: 1px solid var(--rule);
+    font-size: 0.88rem; color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">My Shorts</p>
+  <h1>A small automated pipeline for one YouTube channel</h1>
+  <p class="lede">My Shorts drafts, assembles, and publishes YouTube Shorts to a single channel owned by its operator. Every video is personally reviewed and approved before it goes live.</p>
+
+  <div class="card">
+    <h2>What this is</h2>
+    <p>A personal, single-operator project. It is not a public service and has no other users or accounts.</p>
+  </div>
+  <div class="card">
+    <h2>Google account access</h2>
+    <p>Connects to one YouTube channel to upload approved videos and read that channel's own performance statistics. See the <a href="./privacy.html">privacy policy</a> for the exact scopes and data handling.</p>
+  </div>
+
+  <footer>Contact: <a href="mailto:r1.r7.m5@gmail.com">r1.r7.m5@gmail.com</a> &middot; <a href="./privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
